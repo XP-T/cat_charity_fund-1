@@ -83,7 +83,6 @@ async def update_charity_project(
 
     await check_charity_project_fully_invested(charity_project)
 
-    # if obj_in.name is not None:
     charity_project = await charity_project_crud.update(
         charity_project, obj_in, session
     )
